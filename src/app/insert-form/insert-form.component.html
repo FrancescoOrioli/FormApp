@@ -1,0 +1,21 @@
+<h2>Inserisci record</h2>
+<h3><i>Dati studente</i></h3>
+
+<label for="matricola">matricola</label>
+<input #matricola id="matricola" type="tel" class="validate">
+
+<label for="nome">nome</label>
+<input #nome id="nome" type="tel" class="validate">
+
+<label for="nome">cognome</label>
+<input #cognome id="cognome" type="tel" class="validate">
+
+
+<label for="data">data</label>
+<input #data id="data" type="tel" class="validate">
+
+
+<button (click)="addStudente($event,matricola.value,nome.value,cognome.value,data.value)" type="button">insert</button>
+<button (click)="  elencoStudentiInDb($event)" type="button">stampa record</button>
+
+<button (click)="prova($event,nome.value)" type="button">bottone di prova chiamata</button>
