@@ -4,6 +4,7 @@ export  class  Studente
   private nome: string;
   private cognome: string;
   private data: string;
+  private prova: string;
 
 
 
